@@ -1,0 +1,54 @@
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 1200px;
+  margin: 30 auto;
+  overflow: hidden;
+  position: relative;
+}
+.IntroContent {
+  display: block;
+  text-align: left;
+  height: 100vh;
+  width: 100vw;
+  padding: 32px;
+  font-size: 48px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.PhotoMe {
+  position: absolute;
+  top: -10px;
+  z-index: -1;
+  right: -100px;
+  object-fit: cover;
+  height: 100vh;
+}
+.Hello {
+  font-size: 28px;
+  font-weight: 600;
+}
+.IntroName {
+  color: yellow;
+}
+.IntroParagraph {
+  font-size: medium;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 840px) {
+  .PhotoMe {
+    right: -65vw;
+  }
+  .IntroContent {
+    font-size: 10vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .PhotoMe {
+    right: -25vw;
+  }
+}
